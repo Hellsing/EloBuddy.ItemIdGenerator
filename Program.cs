@@ -21,7 +21,8 @@ namespace EloBuddy.ItemIdEnumGenerator
             3671, // Caulfields_Warhammer_Enchantment_Warrior
             3672, // Bamis_Cinder_Enchantment_Cinderhulk
             3673, // Amplifying_Tome_Enchantment_Runic_Echoes
-            3674 // Recurve_Bow_Enchantment_Devourer
+            3674, // Recurve_Bow_Enchantment_Devourer
+            3632 // Null
         };
 
         public static readonly Dictionary<int, string> DuplicateNames = new Dictionary<int, string>
@@ -32,17 +33,17 @@ namespace EloBuddy.ItemIdEnumGenerator
         };
 
         public const string Header =
-            @"using System;
+@"using System;
 
-            namespace EloBuddy
-            {
-                public enum ItemId
-                {
-                    Unknown = 0,";
+namespace EloBuddy
+{
+    public enum ItemId
+    {
+        Unknown = 0,";
 
         public const string Footer =
-                @"    }
-            }";
+@"    }
+}";
 
         public const string IndentString = "        ";
 
